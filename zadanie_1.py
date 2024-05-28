@@ -23,3 +23,21 @@ a, b, wynik
 1, 2, 3
 3, 5, 8
 """
+
+
+with open("data.txt", "a") as f:
+    f.write(f"a, b, wynik\n")
+    print("W kazdym momenecie mozesz wpisac q by zakonczyc")
+    while True:
+        a = input("Podaj arg a: ")
+
+        if a == "q":
+            break
+        b = input("Podaj arg b: ")
+
+        if b == "q":
+            break
+
+        print()
+        result = int(a) + int(b)
+        f.write(f"{a}, {b}, {result}\n")

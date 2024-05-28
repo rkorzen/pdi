@@ -1,1 +1,2 @@
-Hello pliki
+linia tekstu
+linia tekstu 2
