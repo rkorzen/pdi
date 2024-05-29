@@ -21,7 +21,7 @@ def calculate(waluta, kwota):
     for w in dane[0]["rates"]:
         if w["code"] == waluta:
             cena = w["ask"] * kwota
-            print(f"Za {kwota} PLN kupisz {cena} {waluta}")
+            return cena
 
 
 def main():
@@ -39,8 +39,8 @@ def main():
         print("Niepoprawne użycie - podaj walutę i cene lub wywołaj program bez argumentów")
         exit()
 
-    calculate(co, ile)
-
+    print(calculate(co, ile))
+    input()
 
 
 # print(dir())
