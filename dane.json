@@ -1,0 +1,6 @@
+{
+  "obiekty": [
+    {"typ": "triangle", "area":  123},
+    {"typ": "square", "area":  55}
+  ]
+}

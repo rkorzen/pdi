@@ -10,7 +10,7 @@ nazwa_funkcji()  # wywołanie
 # def suma(a, b):
 #     print(a + b)
 
-def suma(a, *args, b=0):
+def suma(a, *args, b=0, **kwargs):
     print("args=", args)
     wynik = a + b
     for x in args:
@@ -28,7 +28,7 @@ print(wynik)
 print(wynik * 10)
 
 suma(1, 2)
-suma(1, 2, 3, 4, 5,6 ,7, 8, 89,34,56 , 7)
+suma(1, 2, 3, 4, 5,6 ,7, 8, 89,34,56 , 7, c=123)
 
 
 # suma(1, 2, 3 )
